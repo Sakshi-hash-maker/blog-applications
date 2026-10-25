@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="dashboard-heading">
+            <h2>My Dashboard</h2>
+            <p>Create, publish, and manage your blog posts.</p>
+        </section>
+
+        <section class="create-blog">
+            <h2>Create a New Blog</h2>
+
+            <form id="createBlogForm">
+                <label for="blogTitle">Blog Title</label>
+                <input
+                    type="text"
+                    id="blogTitle"
+                    placeholder="Enter your blog title"
+                    maxlength="100"
+                    required
+                >
+
+                <label for="blogContent">Blog Content</label>
+                <textarea
+                    id="blogContent"
+                    placeholder="Write your blog here..."
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit">Publish Blog</button>
+                <p id="blogMessage" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="my-blogs">
+            <h2>My Published Blogs</h2>
+            <div id="blogList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Blog Application</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

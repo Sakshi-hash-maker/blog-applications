@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #173b68;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background-color: #dbeafe;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.blogs {
+    padding: 45px 8%;
+}
+
+.blogs > h2 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.blog-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.blog-card h3 {
+    margin-bottom: 10px;
+    color: #173b68;
+}
+
+.read-more {
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #173b68;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .blogs {
+        padding: 30px 5%;
+    }
+}
+/* Login and Register pages */
+
+.auth-container {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+.auth-card {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px #00000012;
+}
+
+.auth-card h2 {
+    text-align: center;
+    color: #173b68;
+    margin-bottom: 8px;
+}
+
+.auth-card p {
+    text-align: center;
+    margin: 14px 0;
+}
+
+.auth-card label {
+    display: block;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.auth-card button {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.auth-card a {
+    color: #2563eb;
+}
+
+#loginMessage {
+    color: #173b68;
+    font-weight: bold;
+}
+/* Dashboard page */
+
+.dashboard-container {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.dashboard-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-heading h2 {
+    color: #173b68;
+    font-size: 30px;
+}
+
+.create-blog,
+.my-blogs {
+    background: white;
+    padding: 28px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #00000010;
+}
+
+.create-blog h2,
+.my-blogs h2 {
+    color: #173b68;
+    margin-bottom: 20px;
+}
+
+#createBlogForm label {
+    display: block;
+    font-weight: bold;
+    margin: 16px 0 7px;
+}
+
+#createBlogForm input,
+#createBlogForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font: inherit;
+}
+
+#createBlogForm textarea {
+    resize: vertical;
+}
+
+#createBlogForm button {
+    margin-top: 18px;
+}
+
+#blogMessage {
+    margin-top: 12px;
+}
+
+.published-blog {
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    padding: 20px;
+    margin-top: 18px;
+    overflow-wrap: anywhere;
+}
+
+.published-blog h3 {
+    color: #173b68;
+    margin-bottom: 10px;
+}
+
+.published-blog p {
+    white-space: pre-wrap;
+}
+
+.delete-blog {
+    background: #b42318;
+    margin-top: 14px;
+}
+
+.delete-blog:hover {
+    background: #8f1d14;
+}
+
+@media (max-width: 600px) {
+    .dashboard-container {
+        padding: 0 12px;
+    }
+
+    .create-blog,
+    .my-blogs {
+        padding: 18px;
+    }
+}

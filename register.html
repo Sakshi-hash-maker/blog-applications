@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="auth-container">
+        <form class="auth-card" id="registerForm">
+            <h2>Create an Account</h2>
+            <p>Join our blogging community!</p>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="registerEmail">Email Address</label>
+            <input type="email" id="registerEmail"
+                   placeholder="Enter your email" required>
+
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword"
+                   placeholder="Create a password"
+                   minlength="8" required>
+
+            <button type="submit">Create Account</button>
+
+            <p id="registerMessage" aria-live="polite"></p>
+
+            <p>Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
